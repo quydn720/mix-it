@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Body(),
+        backgroundColor: Colors.black,
       ),
       theme: ThemeData.dark(),
     );

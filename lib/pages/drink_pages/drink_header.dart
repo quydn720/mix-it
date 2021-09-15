@@ -14,7 +14,12 @@ class DrinkHeader extends StatelessWidget {
     return Stack(
       alignment: Alignment.bottomLeft,
       children: [
-        Image.network(image),
+        Image.network(
+          image,
+          height: 350,
+          width: double.infinity,
+          fit: BoxFit.fitWidth,
+        ),
         Container(
           width: double.infinity,
           child: Padding(

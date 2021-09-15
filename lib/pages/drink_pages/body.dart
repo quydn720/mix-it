@@ -1,6 +1,7 @@
 import 'package:drink_n_chill/pages/drink_pages/drink_header.dart';
 import 'package:drink_n_chill/pages/drink_pages/list_w_title.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -13,14 +14,22 @@ class Body extends StatelessWidget {
           image:
               'https://www.thecocktaildb.com/images/media/drink/wfqmgm1630406820.jpg',
         ),
+        SizedBox(
+          height: 10.0,
+        ),
         Expanded(
           // TODO: Should use MediaQuery for sizing
           child: SizedBox(
-            width: 300,
+            width: 320,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Ingredient'),
+                Text(
+                  'Ingredient',
+                  style: GoogleFonts.lato(
+                    textStyle: TextStyle(fontSize: 20),
+                  ),
+                ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -72,9 +81,7 @@ class Body extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(
-          height: 10.0,
-        )
+        const SizedBox(height: 10.0),
       ],
     );
   }
