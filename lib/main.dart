@@ -9,11 +9,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Body(),
         backgroundColor: Colors.black,
       ),
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        textTheme: const TextTheme(
+          bodyText2: TextStyle(fontSize: 16),
+        ),
+      ),
     );
   }
 }
