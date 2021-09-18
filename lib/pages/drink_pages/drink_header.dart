@@ -43,7 +43,7 @@ class DrinkHeader extends StatelessWidget {
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
               colors: [
-                Colors.black87,
+                Colors.grey[900]!,
                 Colors.transparent,
               ],
             ),
