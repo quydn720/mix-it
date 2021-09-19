@@ -16,7 +16,8 @@ class ListwTitle extends StatelessWidget {
               child: Text(item),
             ))
         .toList();
-    // TODO: performance issue
+    // TODO: performance issue => (list builder)
+    // sliver  for the header 'Ingredients' (BODY)
     item.insert(
         0,
         Padding(

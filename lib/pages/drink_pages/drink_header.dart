@@ -18,6 +18,7 @@ class DrinkHeader extends StatelessWidget {
         Image.network(
           image,
           width: double.infinity,
+          // TODO: another fit // (horizontal, large width) -> image scale badly
           fit: BoxFit.fitWidth,
         ),
         Container(
