@@ -17,7 +17,6 @@ class DrinkHeader extends StatelessWidget {
       children: [
         Image.network(
           image,
-          height: SizeConfig.screenHeight * 0.5,
           width: double.infinity,
           fit: BoxFit.fitWidth,
         ),

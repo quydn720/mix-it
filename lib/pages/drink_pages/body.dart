@@ -18,7 +18,7 @@ class _BodyState extends State<Body> {
     futureDrink = NetworkHelper(
       baseUrl: 'https://www.thecocktaildb.com/api/json/v1/',
       apiKey: '1',
-    ).fetchDrinkById(11027);
+    ).fetchDrinkById(11007);
     super.initState();
   }
 
@@ -33,7 +33,7 @@ class _BodyState extends State<Body> {
           return Column(
             children: [
               Expanded(
-                flex: 1,
+                flex: 3,
                 child: DrinkHeader(
                   name: drink.drinkName,
                   image: drink.imageUrl,
@@ -43,7 +43,7 @@ class _BodyState extends State<Body> {
                 height: SizeConfig.screenHeight * 0.03,
               ),
               Expanded(
-                flex: 1,
+                flex: 2,
                 child: SingleChildScrollView(
                   child: SizedBox(
                     width: SizeConfig.screenWidth * 0.8,
